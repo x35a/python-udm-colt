@@ -61,14 +61,14 @@
 # Condition is False if: empty object, '', 0, None, False
 # vid 66
 # Truth Value Testing https://docs.python.org/3/library/stdtypes.html#truth-value-testing
-# `is` vs `==`
-# https://replit.com/@35795/python-udm-colt#is_vs_==.py
 
 # Comparison operators
 # <, >, <=, >=, ==, !=
-# == is False if diff types
 # vid 67
+# comparison btwen int and float works
+# comparison btwen int and string does not work
+# `is` vs `==` https://replit.com/@35795/python-udm-colt#is_vs_==.py
 
 # Logical operators
 # and, or, not
-# vid 68
+# vid 68, 70
