@@ -17,7 +17,7 @@
 # https://docs.python.org/3.12/tutorial/introduction.html#numbers
 # 1.25 https://www.udemy.com/course/the-modern-python3-bootcamp/learn/lecture/8680038
 
-# number + string = error (or any math operator)
+# number + string = error (- / not workint, but * works as str repiter)
 # 2.00 https://www.udemy.com/course/the-modern-python3-bootcamp/learn/lecture/8680110#overview
 
 # Strings
@@ -72,3 +72,20 @@
 # Logical operators
 # and, or, not
 # vid 68, 70
+
+# print('abc\n * 10) # sting repiter
+# 7.55 https://www.udemy.com/course/the-modern-python3-bootcamp/learn/lecture/8747976#reviews
+
+# переменная обьявленная внутри if видна за его пределами
+# 4.13 https://www.udemy.com/course/the-modern-python3-bootcamp/learn/lecture/8747986#overview
+
+# import random # imports module and its methods 
+# a = random.randint(1,10)
+# from random import randint # imports only randint method
+# a = randint(1,10)
+# 10.05 https://www.udemy.com/course/the-modern-python3-bootcamp/learn/lecture/8747986#overview
+
+# for item in iterable_object:
+#    do smth with item
+# string is also iterable_object btw 
+# https://www.udemy.com/course/the-modern-python3-bootcamp/learn/lecture/7991008#overview
