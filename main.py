@@ -17,7 +17,6 @@
 # https://docs.python.org/3.12/tutorial/introduction.html#numbers
 # 1.25 https://www.udemy.com/course/the-modern-python3-bootcamp/learn/lecture/8680038
 
-
 # Strings
 # F-Strings
 # val = 10
@@ -29,7 +28,6 @@
 # BUT
 # * works as str repiter # print('abc' * 10) # prints 'abc' 10 times
 # 2.00 https://www.udemy.com/course/the-modern-python3-bootcamp/learn/lecture/8680110#overview
-
 
 # Get char by string index
 # 'abc'[1] # b
@@ -114,3 +112,17 @@
 #   print('end') # do some code if expression is false and terminate the loop
 # https://docs.python.org/3.12/reference/compound_stmts.html#the-for-statement
 # https://www.udemy.com/course/the-modern-python3-bootcamp/learn/lecture/7991014#overview
+
+# Lists
+# Lists are mutable sequences, typically used to store collections of homogeneous items.
+# https://docs.python.org/3.12/library/stdtypes.html#lists
+# len([a,b,c]) # 3 # returns list length
+# len(range(3)) # 3 # returns range 
+# list(range(1, 100)) # list of numbers from 1 to 99
+# somelist[index] # accesses list item at index
+# somelist[-1] # negative number to index backwards
+# 2.50 https://www.udemy.com/course/the-modern-python3-bootcamp/learn/lecture/7991020#questions
+# Check if a value is in a list 
+# 'a' in ['a', 'b', 'c'] # True
+# https://docs.python.org/3.12/library/stdtypes.html#common-sequence-operations
+# 3.40 https://www.udemy.com/course/the-modern-python3-bootcamp/learn/lecture/7991020#questions
