@@ -116,6 +116,9 @@
 # Lists
 # Lists are mutable sequences, typically used to store collections of homogeneous items.
 # https://docs.python.org/3.12/library/stdtypes.html#lists
+# Common Sequence Operations https://docs.python.org/3.12/library/stdtypes.html#common-sequence-operations
+# Mutable Sequence Operations https://docs.python.org/3.12/library/stdtypes.html#mutable-sequence-types
+
 # len([a,b,c]) # 3 # returns list length
 # len(range(3)) # 3 # returns range 
 # list(range(1, 100)) # list of numbers from 1 to 99
