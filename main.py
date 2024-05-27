@@ -17,14 +17,19 @@
 # https://docs.python.org/3.12/tutorial/introduction.html#numbers
 # 1.25 https://www.udemy.com/course/the-modern-python3-bootcamp/learn/lecture/8680038
 
-# number + string = error (- / not workint, but * works as str repiter)
-# 2.00 https://www.udemy.com/course/the-modern-python3-bootcamp/learn/lecture/8680110#overview
 
 # Strings
 # F-Strings
 # val = 10
 # text = f"text {val + 1}"
 # https://www.udemy.com/course/the-modern-python3-bootcamp/learn/lecture/8680138#overview
+
+# number + string = error
+# - / ops not working
+# BUT
+# * works as str repiter # print('abc' * 10) # prints 'abc' 10 times
+# 2.00 https://www.udemy.com/course/the-modern-python3-bootcamp/learn/lecture/8680110#overview
+
 
 # Get char by string index
 # 'abc'[1] # b
@@ -79,7 +84,7 @@
 # переменная обьявленная внутри if видна за его пределами
 # 4.13 https://www.udemy.com/course/the-modern-python3-bootcamp/learn/lecture/8747986#overview
 
-# import random # imports module and its methods 
+# import random # imports module and its methods
 # a = random.randint(1,10)
 # from random import randint # imports only randint method
 # a = randint(1,10)
@@ -87,5 +92,25 @@
 
 # for item in iterable_object:
 #    do smth with item
-# string is also iterable_object btw 
+# string is also iterable_object btw
+# https://docs.python.org/3.12/reference/compound_stmts.html#the-for-statement
 # https://www.udemy.com/course/the-modern-python3-bootcamp/learn/lecture/7991008#overview
+
+# range(start, stop, step)
+# represents an immutable sequence of numbers, commonly used for looping
+# it's a range data type but if wrap in list() it's a list type
+# type(range(3)) # range type
+# list(range(3)) # [0,1,2]
+# ranges https://docs.python.org/3.12/library/stdtypes.html#ranges
+# https://www.udemy.com/course/the-modern-python3-bootcamp/learn/lecture/8814020#overview
+
+# while expression_is_true:
+# n = 0
+# while n < 3:
+#   print(n)
+#   n += 1
+#   # break and continue are optional
+# else: # optional
+#   print('end') # do some code if expression is false and terminate the loop
+# https://docs.python.org/3.12/reference/compound_stmts.html#the-for-statement
+# https://www.udemy.com/course/the-modern-python3-bootcamp/learn/lecture/7991014#overview
