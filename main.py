@@ -13,6 +13,7 @@
 
 # multiple variable assignment
 # all, at, once = 5, 10, 15
+# 5.23 https://www.udemy.com/course/the-modern-python3-bootcamp/learn/lecture/8680072#overview
 
 # Numbers
 # division always returns a floating point number
