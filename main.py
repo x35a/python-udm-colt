@@ -8,6 +8,7 @@
 # None # used to signify the absence of a value in many situations, e.g., it is returned from functions that don’t explicitly return anything. Its truth value is false. https://www.udemy.com/course/the-modern-python3-bootcamp/learn/lecture/9141982#overview
 
 # Built-in Types https://docs.python.org/3.12/library/stdtypes.html
+# types https://www.w3schools.com/python/python_datatypes.asp
 
 # type() # check type
 
@@ -26,6 +27,8 @@
 # val = 10
 # text = f"text {val + 1}"
 # https://www.udemy.com/course/the-modern-python3-bootcamp/learn/lecture/8680138#overview
+
+# string methods https://docs.python.org/3.12/library/stdtypes.html#string-methods
 
 # number + string = error
 # - / ops not working
@@ -156,40 +159,43 @@
 # list to string using string method .join()
 # ','.join(['a', 'b', 'c']) # a,b,c
 
-# list slicing
+# list slicing (more investigation is needed)
 # newlist = list[0:] # copy the list (probably shallow)
 # slicing doesn't change the original list
 # 4.00 https://www.udemy.com/course/the-modern-python3-bootcamp/learn/lecture/7991022?start=15#questions
 
-# flist = ['a', 'b', 'c', 'd']
-# slist = flist
-# tlist = flist[0:]
-# print(slist is flist) # true
-# print(tlist is flist) # fasle
+# ls1 = ['a', 'b', 'c', 'd']
+# ls2 = ls1
+# ls3 = ls1[0:]
+# ls4 = ls1[2:3]
+# print(ls2 is ls1) # true
+# print(ls3 is ls1) # fasle
+# print(ls4 is ls1) # fasle
 
 # s[i:j] # returns list from index i to j-1
 # s[i:j:k] # returns list from index i to j-1 with step k
 # s[i:] # returns list from index i to end
 # s[:j] # returns list from start to j-1]
 
-# print(flist[1:3]) # b, c
-# print(flist[:3]) # a, b, c
-# print(flist[1:]) # b, c, d
-# print(flist[1:4:2]) # b, d
-# print(flist[10:20]) # []
-# print(flist[10:]) # []
-# print(flist[-1]) # d
-# print(flist[-3:]) # b, c, d
-# print(flist[-3:-1]) # b, c
-# print(flist[-4:-1:2]) # a, c
-# print(flist[-10:]) # a, b, c, d
-# print(flist[-10:-7]) # []
-# print(flist[:-10]) # []
-# print(flist[::-1]) # d, c, b, a # -1 step means reverse
-# print(flist[0:3:-1])  # []
-# print(flist[2:0:-1]) # c, b
-# print(flist[1::-1])  # b, a
-# print(flist[:1:-1])  # d, c
+# ls1 = ['a', 'b', 'c', 'd', 'e', 'f', 'g']
+# print(ls1[1:3]) # b, c
+# print(ls1[:3]) # a, b, c
+# print(ls1[1:]) # b, c, d
+# print(ls1[1:4:2]) # b, d
+# print(ls1[10:20]) # []
+# print(ls1[10:]) # []
+# print(ls1[-1]) # d
+# print(ls1[-3:]) # b, c, d
+# print(ls1[-3:-1]) # b, c
+# print(ls1[-4:-1:2]) # a, c
+# print(ls1[-10:]) # a, b, c, d
+# print(ls1[-10:-7]) # []
+# print(ls1[:-10]) # []
+# print(ls1[::-1]) # d, c, b, a # -1 step means reverse
+# print(ls1[0:3:-1])  # []
+# print(ls1[2:0:-1]) # c, b
+# print(ls1[1::-1])  # b, a
+# print(ls1[:1:-1])  # d, c
 
 # modify portions of list
 # numbers = [1, 2, 3, 4, 5]
@@ -199,3 +205,42 @@
 # https://www.udemy.com/course/the-modern-python3-bootcamp/learn/lecture/8845920#overview
 # ls = ['a', 'b']
 # ls[0], ls[1] = ls[1], ls[0] # [b, a]]
+
+# List Comprehesion
+# List comprehensions provide a concise way to create lists.
+# https://docs.python.org/3.12/tutorial/datastructures.html#list-comprehensions
+# vid 112-121 https://www.udemy.com/course/the-modern-python3-bootcamp/learn/lecture/7991024#overview
+
+# nums = [1, 2, 3]
+# numsx2 = [x * 2 for x in nums]  # [2, 4, 6]
+# print(numsx2)
+# numsx2 = [x * 2 for x in nums if x > 1] # syntax error if put 'else' after 'if' stment
+# print(numsx2)  # [4, 6]
+
+# Ternary Operator
+# print([num * 2 if num % 2 == 0 else num / 2 for num in nums])  # [0.5, 4, 1.5]
+# https://www.w3schools.com/python/python_conditions.asp
+# 1.00 https://www.udemy.com/course/the-modern-python3-bootcamp/learn/lecture/8377510#overview
+
+# list to string + filter out some chars
+# with_vowels = 'This is so much fun!'
+# print(''.join(char for char in with_vowels if char not in 'aeiou')) # Ths s mch fn!
+
+
+# Nested Lists
+# https://docs.python.org/3.12/tutorial/datastructures.html#nested-list-comprehensions
+# https://www.udemy.com/course/the-modern-python3-bootcamp/learn/lecture/7991026#overview
+
+# nested list access
+# nested_list = [[1,2,3], [4,5,6], [7,8,9]]
+# nested_list[0][1] # 2
+# nested_list[-1] # [7,8,9]
+
+# read nested list in a row
+# [[print(val) for val in k] for k in nested_list] # 1 2 3 4 5 ..
+
+# generate nested list
+# [[k for k in range(1,4)] for i in range(3)] # [[1,2,3], [1,2,3], [1,2,3]]
+
+# with if else
+# [['X' if k%2 != 0 else 'O' for k in range(1,4)] for i in range(3)] # [['X', 'O', 'X'], ['X', 'O', 'X'] .. ]
