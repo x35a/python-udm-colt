@@ -1,3 +1,15 @@
+# Python docs
+# doc tut ref https://docs.python.org/3.12/index.html
+# w3 tut ref https://www.w3schools.com/python/default.asp
+
+# Any Lang Q
+# Scopes
+# vairables, functions, classes, etc. vars visability inside/outside function etc.
+# Link or Copy
+# a=smth, b=a, b is link or copy? vars, funcs, classes, etc.
+# Shallow copy
+# Check build in copy methods are shallow or not. Check how to do deep copy.
+
 # Types
 # bool # True or False
 # int # integer
@@ -225,7 +237,6 @@
 # list to string + filter out some chars
 # with_vowels = 'This is so much fun!'
 # print(''.join(char for char in with_vowels if char not in 'aeiou')) # Ths s mch fn!
-
 
 # Nested Lists
 # https://docs.python.org/3.12/tutorial/datastructures.html#nested-list-comprehensions
